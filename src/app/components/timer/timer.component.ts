@@ -7,6 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TimerComponent implements OnInit {
 
+  counter: number = 0;
+  timer = setInterval(() => {
+    this.counter++;
+  }, 1000)
+
   constructor() { }
 
   ngOnInit() {
