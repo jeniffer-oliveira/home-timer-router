@@ -7,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+  name: string = "Jeniffer";
+  ra: string = "0050832021036";
+  today = new Date();
+
   constructor() { }
 
   ngOnInit() {
