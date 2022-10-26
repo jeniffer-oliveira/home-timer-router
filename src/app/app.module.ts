@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 import { TimerComponent } from './components/timer/timer.component';
 import { HomeComponent } from './components/home/home.component';
-import { RouterComponent } from './components/router/router.component';
+import { MultiplicationTableComponent } from './components/multiplication-table/multiplication-table.component';
 
 @NgModule({
   imports: [BrowserModule, FormsModule],
@@ -15,7 +15,7 @@ import { RouterComponent } from './components/router/router.component';
     HelloComponent,
     TimerComponent,
     HomeComponent,
-    RouterComponent,
+    MultiplicationTableComponent,
   ],
   bootstrap: [AppComponent],
 })
