@@ -9,3 +9,10 @@ const routes: Routes = [
   { path: 'timer', component: TimerComponent },
   { path: 'table', component: MultiplicationTableComponent },
 ];
+
+@NgModule({
+  declarations: [],
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule],
+})
+export class AppRoutingModule {}
