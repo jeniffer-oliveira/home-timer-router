@@ -5,7 +5,7 @@ import { MultiplicationTableComponent } from './components/multiplication-table/
 import { TimerComponent } from './components/timer/timer.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
+  { path: 'home', component: HomeComponent },
   { path: 'timer', component: TimerComponent },
   { path: 'table', component: MultiplicationTableComponent },
 ];
