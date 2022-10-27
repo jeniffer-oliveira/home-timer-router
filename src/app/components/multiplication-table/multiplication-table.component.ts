@@ -16,6 +16,7 @@ export class MultiplicationTableComponent implements OnInit {
 
   MultiplicationTable() {
     var multiTable = '';
+    var value = this.num;
     for (var count = 1; count <= 10; count++) {
       multiTable +=
         this.num + ' X ' + count + ' = ' + Number(this.num) + count + `/n`;
