@@ -7,7 +7,7 @@ import { TimerComponent } from './components/timer/timer.component';
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'timer', component: TimerComponent },
-  { path: 'table', component: MultiplicationTableComponent },
+  { path: 'multiplication-table', component: MultiplicationTableComponent },
 ];
 
 @NgModule({
