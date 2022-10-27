@@ -1,15 +1,25 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-multiplication-table',
   templateUrl: './multiplication-table.component.html',
-  styleUrls: ['./multiplication-table.component.css']
+  styleUrls: ['./multiplication-table.component.css'],
 })
 export class MultiplicationTableComponent implements OnInit {
+  @Input() num: number = 0;
 
-  constructor() { }
+  counter = 0;
 
-  ngOnInit() {
+  constructor() {}
+
+  ngOnInit() {}
+
+  MultiplicationTable() {
+    var multiTable = '';
+    for (var count = 1; count <= 10; count++) {
+      multiTable +=
+        this.num + ' X ' + count + ' = ' + Number(this.num) + count + '/n';
+    }
+    return multiTable;
   }
-
 }
